@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "52730746799",
+    "project_id": "seg2105projectgroup3",
+    "firebase_url": "https://seg2105projectgroup3-default-rtdb.firebaseio.com",
+    "storage_bucket": "seg2105projectgroup3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52730746799:android:eaf71671db3dba0f28c15a",
+        "android_client_info": {
+          "package_name": "com.example.grimpeurscyclingclub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXVVMWF3XsJFhwC20-vrdKUXpsUpXeSbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1",
+  "author": "",
+  "config": {},
+  "createAt": "",
+  "homepage": "",
+  "identifier": "",
+  "meta": {},
+  "schemaVersion": 0
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="43dp">
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="268dp"
+            android:layout_height="85dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Enter your username:"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="267dp"
+            android:layout_height="78dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Enter your password:"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:onClick="buttonLoginAccountClick"
+            android:text="@string/buttonLogin" />
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="274dp"
+            android:layout_height="57dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:text="Don't have an account? Sign up here"
+            android:textColor="@color/fui_bgTwitter"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="16sp"
+            android:onClick="buttonRedirectToSignUpScreenClick"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

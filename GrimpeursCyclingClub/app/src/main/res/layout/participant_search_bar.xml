@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/searchBarLayout"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:onClick="search"
+            android:text="SEARCH"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/eventTypeFilter"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Filter events by type"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/timeTrialSwitch2"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Time Trial"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/hillClimbSwitch2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Hill Climb"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/roadStageRaceSwitch2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Road Stage Race"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/roadRaceSwitch2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Road Race"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/groupRidesSwitch2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Group Rides"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/ListViewEvents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/eventsTitle"
+            android:textAlignment="center"></ListView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

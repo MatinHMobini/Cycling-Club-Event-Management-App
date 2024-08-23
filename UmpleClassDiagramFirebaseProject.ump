@@ -1,0 +1,143 @@
+class Account
+{
+
+String username;
+  String password;
+
+  String email;
+    * <- 1 AccountList;
+}
+class AdminAccount
+{
+  List<Event>Events;
+isA Account;
+
+  1 -- * Event;
+}
+
+class CyclingClubAccount
+{
+  List<Event>organizedEvents;
+  socialMediaLink;
+  mainContactName;
+ phoneNumber;
+isA Account;
+isA PublicUser;
+
+}
+class ParticipantAccount
+{
+  List registeredEvents;
+socialMediaLink;
+mainContactName;
+phoneNumber;
+isA Account;
+isA PublicUser;
+}
+class Event
+{
+  eventName;
+date;
+location;
+ double registrationFee;
+
+int participantLimit;
+CyclingClubAccount organizerAccount;
+id;
+AdminAccount AdminAccount;
+* <- 1 EventList;
+  1 -> * CyclingClubAccount;
+}
+
+
+
+
+namespace -;
+
+
+class TimeTrial
+{
+  isA Event;
+}
+
+class HillClimb
+{
+  isA Event;
+}
+
+class RoadStageRace
+{
+  isA Event;
+}
+
+class RoadRace
+{
+  isA Event;
+}
+
+class GroupRides
+{
+  isA Event;
+}
+
+class AccountList
+{
+  List<Accounts>Accounts;
+  Activity context;
+}
+
+class EventList
+{
+  List<Event>Events;
+  Activity context;
+}
+
+interface PublicUser{
+
+}
+
+class Comment
+{
+  reviewer;
+  clubAccount;
+  comment;
+  date;
+  Int rating;
+  * -- 1 CyclingClubAccount;
+}
+
+class CommentList
+{
+  Activity context;
+  List coments;
+  1 -> * Comment;
+}
+
+class EventTypeList
+{
+  Activity context;
+  List eventTypes;
+  1 -> * CyclingClubAccount;
+}
+
+class Account
+{
+  position 358 149 141.938 92.3594;
+  position.association Account__AccountList 143,19 0,14;
+}
+class AdminAccount
+{
+  position 43 327 228.812 75.3594;
+  position.association AdminAccount__Event 119,75 72,0;
+}
+
+class CyclingClubAccount
+{
+  position 358 337 198.812 109.359;
+    position.association CyclingClubAccount__Event 8,36 85,0;
+  position.association CyclingClubAccount__EventTypeList 150,104 38,0;
+}
+class ParticipantAccount
+{
+  position 599 337 198.812 92.3594;
+}

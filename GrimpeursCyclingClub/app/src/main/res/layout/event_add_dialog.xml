@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/searchBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="27dp">
+
+        <TextView
+            android:id="@+id/addEventInfoTitle"
+            android:layout_width="358dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Enter the new event's information "
+            android:textAlignment="center"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/variableNames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/eventName"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Event Name: "
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Location:"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/registrationFee"
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Registration Fee(double):"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/participantLimit"
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Participant Limit(int):"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/variableInputs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/addEventName"
+                    android:layout_width="268dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/addEventLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/addEventRegistrationFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/searchBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/datePickerButton"
+            style="?android:spinnerStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="openDatePicker"
+            android:text="JAN 01 2020"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Spinner
+            android:id="@+id/chooseEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Create Event"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

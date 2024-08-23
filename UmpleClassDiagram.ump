@@ -1,0 +1,75 @@
+class Account
+{
+  String username;
+  String password;
+  
+  String email;
+//I can't make this 1 -- 1 for some reason
+    0..1 -- 1 Client;
+  
+}
+
+class AdminAccount
+{
+  isA Account;
+
+}
+
+class CyclingClubAccount
+{
+  isA Account;
+}
+
+class ParticipantAccount
+{
+  isA Account;
+}
+
+class Server
+{
+}
+
+class Client
+{
+  * -- 1 Server;
+}
+
+
+
+namespace -;
+
+
+class Account
+{
+  position 349 224 141.938 92.3594;
+  position.association Account__Client 68,0 77,58;
+}
+
+class AdminAccount
+{
+  position 79 408 119.391 41.3594;
+}
+
+class CyclingClubAccount
+{
+  position 246 408 154.703 41.3594;
+}
+
+class ParticipantAccount
+{
+  position 433 410 147.828 41.3594;
+}
+
+class Server
+{
+  position 131 110 109 41.3594;
+}
+//$?[End_of_model]$?
+
+namespace -;
+
+class Client
+{
+  position 340 101 103.953 41.3594;
+  position.association Client__Server 0,10 110,0;
+}

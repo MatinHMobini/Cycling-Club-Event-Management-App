@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CCEventCatalogue">
+
+    <LinearLayout
+        android:id="@+id/ButtonLayout"
+        tools:layout_editor_absoluteX="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="158dp"
+            android:layout_height="175dp"
+            android:layout_below="@+id/eventsTitle"
+            android:fontFamily="sans-serif-medium"
+            android:text="Add New Event"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/eventTypeAssociation"
+            android:layout_width="158dp"
+            android:layout_height="75dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Choose your event Type: "
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/timeTrialSwitch"
+            android:layout_width="159dp"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Time Trial"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/hillClimbSwitch"
+            android:layout_width="159dp"
+            android:layout_height="50dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Hill Climb"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/roadStageRaceSwitch"
+            android:layout_width="158dp"
+            android:layout_height="50dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Road Stage Race"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/roadRaceSwitch"
+            android:layout_width="159dp"
+            android:layout_height="50dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Road Race"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/groupRidesSwitch"
+            android:layout_width="158dp"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Group Rides"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/eventsTitle"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Events List"
+            android:textAlignment="center"
+            android:textSize="36dp" />
+
+        <ListView
+            android:id="@+id/ListViewEvents"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="86dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/eventsTitle"
+            android:textAlignment="center"></ListView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

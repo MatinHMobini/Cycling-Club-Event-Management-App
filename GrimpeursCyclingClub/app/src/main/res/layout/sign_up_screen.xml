@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpScreen">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="360dp">
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="262dp"
+            android:layout_height="85dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Enter your username:"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="264dp"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Enter your email:"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="267dp"
+            android:layout_height="78dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Enter your password:"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:onClick="buttonCreateAccountClick"
+            android:text="@string/buttonCreateAccount" />
+
+        <LinearLayout
+            android:id="@+id/roleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cycleParticipant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:onClick="switchAccountOnClick"
+                android:text="Participant" />
+
+            <Button
+                android:id="@+id/cycleClub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#888888"
+                android:fontFamily="monospace"
+                android:onClick="switchAccountOnClick"
+                android:text="Club" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
