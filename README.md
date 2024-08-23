@@ -1,6 +1,9 @@
 # 🚴 Cycling Club Event Management App
 
-This project is a Cycling Club Event Management application built using Java and Android Studio. The app is designed to manage different types of cycling events, user accounts, and associated interactions within a cycling community.
+This project is a Cycling Club Event Management application built using Java and Android Studio. The app is designed to manage different types of cycling events, user accounts, and associated interactions within a cycling community. 
+
+## 📺 Video Introduction
+Please View Our Youtube Video explaining the application https://www.youtube.com/watch?v=tHSzEHOk_aI
 
 ## 📋 UML Overview
 
