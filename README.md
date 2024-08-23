@@ -1,9 +1,52 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/NsogzK3F)
+# 🚴 Cycling Club Event Management App
+
+This project is a Cycling Club Event Management application built using Java and Android Studio. The app is designed to manage different types of cycling events, user accounts, and associated interactions within a cycling community.
+
+## 📋 UML Overview
+
+The core structure of the app is based on the following classes:
+
+- **Account**: Represents a user account with attributes like `username`, `password`, and `email`.
+  - **AdminAccount**: A specialized account type for administrators, capable of managing events.
+  - **CyclingClubAccount**: An account type for cycling clubs that can organize events and have public-facing information.
+  - **ParticipantAccount**: Represents participants who can register for events.
+- **Event**: Represents an event with attributes like `eventName`, `date`, `location`, `registrationFee`, and `participantLimit`.
+  - **TimeTrial**, **HillClimb**, **RoadStageRace**, **RoadRace**, **GroupRides**: Different types of events extending the base `Event` class.
+- **Comment**: Represents user comments on cycling clubs, including a rating and the date.
+- **AccountList** and **EventList**: Manage lists of accounts and events, respectively.
+
+## 🛠️ Technologies Used
+
+- **Java**: Core programming language for the app.
+- **Android Studio**: IDE used for development.
+- **UML Diagrams**: Used for planning and structuring the application.
+
+## 🚀 Features
+
+- **User Management**: Create and manage different types of user accounts.
+- **Event Management**: Organize and participate in various cycling events.
+- **Comments and Ratings**: Users can leave comments and ratings for cycling clubs.
+- **Event Types**: Supports multiple event types such as Time Trials, Hill Climbs, Road Races, etc.
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MatinHMobini/grimpeurscyclingclub.git
+   ```
+2. Open the project in Android Studio.
+3. Build and run the app on an emulator or physical device.
+
+## 📚 UML Diagram
+
+![image](https://github.com/user-attachments/assets/07dd7f5b-3c41-4a4e-9d7e-8364b2b9d659)
 
 
-First deliverable due date: October 10th, 2023
-Second deliverable due date: November 6th, 2023
-Final assignment due date: December 7th, 2023
+## 💡 How to Use
 
+- **Create an Account**: Sign up as an Admin, Cycling Club, or Participant.
+- **Organize Events**: Cycling Clubs can organize various types of cycling events.
+- **Register for Events**: Participants can browse and register for upcoming events.
+- **Leave Feedback**: Comment on and rate cycling clubs based on your experience.
 
-Sources Used: Umple
+Thank you for viewing!
