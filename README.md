@@ -52,4 +52,8 @@ The core structure of the app is based on the following classes:
 - **Register for Events**: Participants can browse and register for upcoming events.
 - **Leave Feedback**: Comment on and rate cycling clubs based on your experience.
 
+## Example of User Point of View
+![Screenshot 2024-08-31 at 8 34 49 PM](https://github.com/user-attachments/assets/9e502bbc-d31f-417b-a5d7-53a3ec5ae8cb)
+
+
 Thank you for viewing!
